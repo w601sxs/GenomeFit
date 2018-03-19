@@ -9,6 +9,13 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
-  }
+    }
+
+  doWalkthrough() {
+        console.log('Navigating to slides');
+        this.navCtrl.push('walkthrough');
+    }
 
 }
+
+

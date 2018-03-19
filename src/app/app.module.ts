@@ -32,7 +32,7 @@ import { Range } from '../pages/range/range';
 import { Searchbar } from '../pages/searchbar/searchbar';
 import { Segment } from '../pages/segment/segment';
 import { Selects } from '../pages/selects/selects';
-import { Slides } from '../pages/slides/slides';
+//import { Slides } from '../pages/slides/slides';
 import { Tabs } from '../pages/tabs/tabs';
 import { Tab1 } from '../pages/tabs/tab1';
 import { Tab2 } from '../pages/tabs/tab2';
@@ -70,7 +70,7 @@ import { Toolbar } from '../pages/toolbar/toolbar';
     Searchbar,
     Segment,
     Selects,
-    Slides,
+    //Slides,
     Tabs,
     Tab1,
     Tab2,
@@ -112,7 +112,7 @@ import { Toolbar } from '../pages/toolbar/toolbar';
     Searchbar,
     Segment,
     Selects,
-    Slides,
+    //Slides,
     Tabs,
     Tab1,
     Tab2,
