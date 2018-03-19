@@ -1,6 +1,6 @@
 # Genome Fit Template
 
-A demo app with ionic components.
+A demo app with ionic components. Make sure you have node and npm, else download from https://npmjs.com/get-npm. 
 
 # Installation
 
