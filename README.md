@@ -39,7 +39,7 @@ Learn more about Ionic components at [Ionic Components](http://ionicframework.co
 
 To install this Ionic 2 Kitchen Sink in your machine, run the following commands below. You may need to install the commands first as documented in the [Official Installation](http://ionicframework.com/docs/intro/installation/).
 
-$ `git clone git@github.com:doncadavona/ionic-2-kitchen-sink.git`
+$ `git clone https://github.com/w601sxs/GenomeFit.git`
 
 $ `cd ionic-2-kitchen-sink`
 
