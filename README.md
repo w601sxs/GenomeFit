@@ -41,7 +41,7 @@ To install this Ionic 2 Kitchen Sink in your machine, run the following commands
 
 $ `git clone https://github.com/w601sxs/GenomeFit.git`
 
-$ `cd ionic-2-kitchen-sink`
+$ `cd GenomeFit`
 
 $ `npm install`
 
