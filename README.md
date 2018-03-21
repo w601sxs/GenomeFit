@@ -1,6 +1,7 @@
 # Genome Fit Template
 
-A demo app with ionic components. Make sure you have node and npm, else download from https://npmjs.com/get-npm. 
+A demo app with ionic components. 
+Make sure you have node and npm, else download from https://npmjs.com/get-npm. 
 
 # Installation
 
@@ -12,11 +13,17 @@ $ `cd GenomeFit`
 
 $ `npm install`
 
-$ `ionic serve`
+Make sure you have ionic or cordova installed:
+
+$ `npm install -g ionic cordova`
 
 That's it! To quickly see the app run in Android, iOS and Windows phones, run:
 
 $ `ionic lab`
+
+And for the web-app
+
+$ `ionic serve`
 
 You'll see:
 
@@ -24,35 +31,4 @@ You'll see:
 
 ## Deployment
 
-To deploy the app to real devices, such as Android, iOS or Windows phones, read on the [Official Deployment](http://ionicframework.com/docs/intro/deploying/) documentation.
-
-## Components
-
-* Action Sheets
-* Alerts
-* Badges
-* Buttons
-* Cards
-* Checkbox
-* DateTime
-* FABs
-* Gestures
-* Grid
-* Icons
-* Inputs
-* Lists
-* Loading
-* Menus
-* Modals
-* Navigation
-* Popover
-* Radio
-* Range
-* Searchbar
-* Segment
-* Selects
-* Slides
-* Tabs
-* Toast
-* Toggle
-* Toolbar
+To deploy the app to real devices, such as Android, iOS or Windows phones, read more on the [Official Deployment](http://ionicframework.com/docs/intro/deploying/) documentation.
