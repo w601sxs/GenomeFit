@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 /**
  * Generated class for the Slides page.
@@ -8,8 +8,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * on Ionic pages and navigation.
  */
 @IonicPage({
-    name: 'walkthrough'
+  name: 'walkthrough'
 })
+
 @Component({
   selector: 'page-slides',
   templateUrl: 'slides.html',
@@ -31,14 +32,19 @@ export class Slides {
     },
     {
       title: "Why should I use GenomeFit?",
-      description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
+      description: "<i>GenomeFit</i> is an open source thing that is cool..",
       image: "http://placehold.it/128",
     },
     {
       title: "How much does it cost?",
-      description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
+      description: "How much are you willing to invest in yourself?",
       image: "http://placehold.it/128",
     }
   ];
+
+  goHome(msg: string) {
+    console.log("closing slider from the " + msg + " button");
+    this.navCtrl.pop();
+  }
 
 }

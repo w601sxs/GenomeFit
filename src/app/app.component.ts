@@ -29,11 +29,16 @@ import { Segment } from '../pages/segment/segment';
 import { Selects } from '../pages/selects/selects';
 import { Slides } from '../pages/slides/slides';
 import { Tabs } from '../pages/tabs/tabs';
-import { Tab1 } from '../pages/tabs/tab1';
-import { Tab2 } from '../pages/tabs/tab2';
+// import { Tab1 } from '../pages/tabs/tab1';
+// import { Tab2 } from '../pages/tabs/tab2';
 import { Toast } from '../pages/toast/toast';
 import { Toggle } from '../pages/toggle/toggle';
 import { Toolbar } from '../pages/toolbar/toolbar';
+
+import { Genometabs } from '../genome/features/genometabs'
+import { Questions } from '../genome/features/tab1.questions'
+import { Insights } from '../genome/features/tab2.insights'
+import { Actions } from '../genome/features/tab3.actions'
 
 @Component({
   templateUrl: 'app.html'
@@ -78,7 +83,12 @@ export class MyApp {
       { title: 'Tabs', component: Tabs },
       { title: 'Toast', component: Toast },
       { title: 'Toggle', component: Toggle },
-      { title: 'Toolbar', component: Toolbar }
+      { title: 'Toolbar', component: Toolbar },
+
+      { title: 'Genometabs', component: Genometabs },
+      { title: 'Questions', component: Questions },
+      { title: 'Insights', component: Insights },
+      { title: 'Actions', component: Actions },
     ];
 
   }
