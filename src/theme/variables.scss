@@ -60,7 +60,13 @@ $colors: (
 // so that the above variables are used and Ionic's
 // default are overridden.
 
-@import "ionic.theme.default";
+//@import "ionic.theme.default";
+@import "ionic.theme.dark"; // i like dark themed apps
+
+ion-content {
+  // load if needed
+  //background-image: url('../assets/genome/gene_grapes.jpg');
+}
 
 
 // Ionicons
@@ -76,3 +82,5 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@import "./genome";

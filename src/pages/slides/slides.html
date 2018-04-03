@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Help!</ion-title>
+    <ion-title>Hello!</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
         <ion-buttons end>
-          <button ion-button color="primary">Skip</button>
+          <button ion-button color="primary" (click)="goHome('skip')">Skip</button>
         </ion-buttons>
       </ion-toolbar>
       <img [src]="slide.image" class="slide-image"/>
@@ -25,7 +25,7 @@
       </ion-toolbar>
       <img src="http://placehold.it/128" class="slide-image"/>
       <h2 class="slide-title">Ready for ripped+genes?</h2>
-      <button ion-button large clear icon-right color="primary">
+      <button ion-button large clear icon-right color="primary" (click)="goHome('continue')" >
         Continue
         <ion-icon name="arrow-forward"></ion-icon>
       </button>

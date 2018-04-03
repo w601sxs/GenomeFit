@@ -3,22 +3,38 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>G-Ufit</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h1>GenomeFit</h1>
 
-  <p>
-    A demo of the Genome Fit app
-  </p>
 
-  <p>
-    View source: <a href="https://github.com/w601sxs/GenomeFit">https://github.com/w601sxs/GenomeFit</a>.
-  </p>
+  <h1>GenomeFit!</h1>
 
-  <button ion-button secondary menuToggle>Menu</button>
-  <button ion-button (click)="doWalkthrough()">Help!</button>
+  <!--<button ion-button (click)="genomeLogin()">Genome Login!</button>-->
+
+  <!--<div padding>-->
+    <!--<h2>GenomeFit</h2>-->
+  <!--</div>-->
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="secondary" (click)="genomeLogin()" block>Get Fit!</button>
+    <button ion-button color="dark" (click)="genomeCancel()" block>...or die tyin'...</button>
+  </div>
 
 </ion-content>

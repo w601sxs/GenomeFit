@@ -40,6 +40,11 @@ import { Toast } from '../pages/toast/toast';
 import { Toggle } from '../pages/toggle/toggle';
 import { Toolbar } from '../pages/toolbar/toolbar';
 
+import { Genometabs } from '../genome/features/genometabs'
+import { Questions } from '../genome/features/tab1.questions'
+import { Insights } from '../genome/features/tab2.insights'
+import { Actions } from '../genome/features/tab3.actions'
+
 @NgModule({
   declarations: [
     MyApp,
@@ -77,6 +82,10 @@ import { Toolbar } from '../pages/toolbar/toolbar';
     Toast,
     Toggle,
     Toolbar,
+    Genometabs,
+    Questions,
+    Insights,
+    Actions,
   ],
   imports: [
     BrowserModule,
@@ -119,6 +128,10 @@ import { Toolbar } from '../pages/toolbar/toolbar';
     Toast,
     Toggle,
     Toolbar,
+    Genometabs,
+    Questions,
+    Insights,
+    Actions,
   ],
   providers: [
     StatusBar,
