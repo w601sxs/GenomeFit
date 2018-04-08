@@ -44,6 +44,7 @@ import { Genometabs } from '../genome/features/genometabs'
 import { Questions } from '../genome/features/tab1.questions'
 import { Insights } from '../genome/features/tab2.insights'
 import { Actions } from '../genome/features/tab3.actions'
+import { User } from '../genome/features/tab4.user'
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { Actions } from '../genome/features/tab3.actions'
     Questions,
     Insights,
     Actions,
+    User,
   ],
   imports: [
     BrowserModule,
@@ -132,6 +134,7 @@ import { Actions } from '../genome/features/tab3.actions'
     Questions,
     Insights,
     Actions,
+    User,
   ],
   providers: [
     StatusBar,

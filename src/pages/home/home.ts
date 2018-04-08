@@ -35,7 +35,7 @@ export class HomePage {
     const toast = this.toastCtrl.create({
       message: 'Successfully logged in!',
       showCloseButton: true,
-      duration: 1500,
+      duration: 2000,
       position: 'top',
       closeButtonText: 'Cool'
     });
@@ -43,7 +43,7 @@ export class HomePage {
   }
 
   genomeCancel() {
-    console.log('get lost!');
+    console.log('starting walkthrough');
     this.navCtrl.push('walkthrough');
   }
 }
