@@ -31,10 +31,10 @@ export class Genometabs {
   tab4: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tab4 = User;
   	this.tab1 = Questions; // Recommendations
     this.tab2 = Insights; // api results
     this.tab3 = Actions; //
+    this.tab4 = User;
   }
 
   ionViewDidLoad() {

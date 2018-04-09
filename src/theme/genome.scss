@@ -1,3 +1,4 @@
+// android back-button issue fix
 ion-title {
   position: absolute;
   top: 0;
@@ -12,3 +13,7 @@ h1 {
   text-align: center;
 }
 
+// android back-button issue fix
+.back-button {
+  z-index: 1;
+}
