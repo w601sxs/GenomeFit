@@ -35,15 +35,15 @@ export class HomePage {
     const toast = this.toastCtrl.create({
       message: 'Successfully logged in!',
       showCloseButton: true,
-      duration: 3000,
-      position: 'middle',
+      duration: 2000,
+      position: 'top',
       closeButtonText: 'Cool'
     });
     toast.present();
   }
 
   genomeCancel() {
-    console.log('get lost!');
+    console.log('starting walkthrough');
     this.navCtrl.push('walkthrough');
   }
 }
