@@ -27,9 +27,9 @@ export class Genometabs {
   tab3: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.tab1 = Questions;
-    this.tab2 = Insights;
-    this.tab3 = Actions;
+  	this.tab1 = Questions; // Recommendations
+    this.tab2 = Insights; // api results
+    this.tab3 = Actions; //
   }
 
   ionViewDidLoad() {
