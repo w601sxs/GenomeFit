@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController} from 'ionic-angular';
+import {NavController, NavParams, ToastController} from 'ionic-angular';
+import {RestapiService} from "../../providers/restapi-service/restapi-service";
 
 // @IonicPage({
 //   name: 'questions'
@@ -9,11 +10,11 @@ import { NavController} from 'ionic-angular';
   template: `
   <ion-header>
     <ion-navbar>
-      <ion-title>Question</ion-title>
+      <ion-title>Recommendations</ion-title>
     </ion-navbar>
   </ion-header>
   <ion-content padding>
-    <h1>Questions</h1>
+    <h1>Recommendations</h1>
     <p>
       Questions for inputs
     </p>
@@ -67,13 +68,50 @@ import { NavController} from 'ionic-angular';
       </ion-item>
     </ion-card>
   </ion-content>
-  `
+  `,
+  templateUrl: 'tab1.recommendations.html',
 })
 
 export class Recommendations {
 
-	constructor(public navCtrl: NavController) {
-    // Id is 1, nav refers to Tab1
+  users: any;
+  private user: any;
+
+  // constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public toastCtrl: ToastController,
+              public restapiService: RestapiService) {
+    // Id is 3, nav refers to Tab3
     // console.log(this.nav.id)
+    this.getUsers();
+    this.getGenome();
+  }
+
+
+  getGenome() {
+    //genome api here!
+
+    // const genomeLink = require('genomelink-node');
+    // const callback = (report) => {
+    //   console.log(report.summary.text);
+    //   ;
+    //   genomeLink.Report.fetch({
+    //     name: 'eye-color',
+    //     population: 'european',
+    //     token: 'GENOMELINKTEST001'
+    //   }).then((report) => {
+    //     callback(report);
+    //   });
+    //
+    // }
+
+  }
+
+  getUsers() {
+    this.restapiService.getUsers()
+      .then(data => {
+        this.users = data;
+      });
   }
 }
