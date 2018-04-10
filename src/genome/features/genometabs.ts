@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Questions } from './tab1.questions';
+import { Recommendations } from './tab1.questions';
 import { Insights } from './tab2.insights';
 import { Actions } from './tab3.actions';
 import { User } from './tab4.user';
@@ -31,7 +31,7 @@ export class Genometabs {
   tab4: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.tab1 = Questions; // Recommendations
+  	this.tab1 = Recommendations; // Recommendations
     this.tab2 = Insights; // api results
     this.tab3 = Actions; //
     this.tab4 = User;

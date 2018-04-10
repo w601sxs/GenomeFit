@@ -41,10 +41,13 @@ import { Toggle } from '../pages/toggle/toggle';
 import { Toolbar } from '../pages/toolbar/toolbar';
 
 import { Genometabs } from '../genome/features/genometabs'
-import { Questions } from '../genome/features/tab1.questions'
+import { Recommendations } from '../genome/features/tab1.questions'
 import { Insights } from '../genome/features/tab2.insights'
 import { Actions } from '../genome/features/tab3.actions'
 import { User } from '../genome/features/tab4.user'
+// import { RestapiServiceProvider } from '..\providers\restapi-service/restapi-service';
+import { RestapiService } from '../providers/restapi-service/restapi-service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -84,14 +87,15 @@ import { User } from '../genome/features/tab4.user'
     Toggle,
     Toolbar,
     Genometabs,
-    Questions,
+    Recommendations,
     Insights,
     Actions,
     User,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -131,7 +135,7 @@ import { User } from '../genome/features/tab4.user'
     Toggle,
     Toolbar,
     Genometabs,
-    Questions,
+    Recommendations,
     Insights,
     Actions,
     User,
@@ -139,7 +143,8 @@ import { User } from '../genome/features/tab4.user'
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    // {provide: ErrorHandler, useClass: IonicErrorHandler}, RestapiServiceProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}, RestapiService
   ]
 })
 export class AppModule {}

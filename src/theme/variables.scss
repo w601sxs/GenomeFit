@@ -75,6 +75,7 @@ ion-content {
 // http://ionicframework.com/docs/v2/ionicons/
 
 @import "ionic.ionicons";
+//@import "ionic.ionicons.dark";
 
 
 // Fonts
@@ -84,3 +85,19 @@ ion-content {
 @import "noto-sans";
 
 @import "./genome";
+
+
+// Custom Colors:
+// --------------------------------------------------
+
+//$colors: (
+//  primary:    #488aff,
+//  secondary:  #32db64,
+//  danger:     #f53d3d,
+//  light:      #f4f4f4,
+//  dark:       #222,
+//  twitter: (
+//    base: #55acee,
+//    contrast: #ffffff
+//  )
+//);

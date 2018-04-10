@@ -70,7 +70,7 @@ import { NavController} from 'ionic-angular';
   `
 })
 
-export class Questions {
+export class Recommendations {
 
 	constructor(public navCtrl: NavController) {
     // Id is 1, nav refers to Tab1
