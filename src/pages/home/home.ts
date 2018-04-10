@@ -3,6 +3,7 @@ import {NavController, NavParams, ToastController} from 'ionic-angular';
 
 import {Genometabs} from '../../genome/features/genometabs';
 
+import {RestapiService} from '../../providers/restapi-service/restapi-service';
 
 @Component({
   selector: 'page-home',
@@ -15,9 +16,13 @@ export class HomePage {
 
   // constructor(public navCtrl: NavController) {
   // constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
-  constructor(public navCtrl: NavController, public navParams: NavParams , public toastCtrl: ToastController) {
-
+  // constructor(public navCtrl: NavController, public navParams: NavParams , public toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public toastCtrl: ToastController,
+              public restapiService: RestapiService) {
   }
+
 
   doWalkthrough() {
     console.log('Navigating to slides');
@@ -46,4 +51,6 @@ export class HomePage {
     console.log('starting walkthrough');
     this.navCtrl.push('walkthrough');
   }
+
+
 }
