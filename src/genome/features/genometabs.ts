@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Recommendations } from './tab1.questions';
+import { Recommendations } from './tab1.recommendations';
 import { Insights } from './tab2.insights';
 import { Actions } from './tab3.actions';
 import { User } from './tab4.user';
